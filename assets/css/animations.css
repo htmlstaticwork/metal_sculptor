@@ -1,0 +1,45 @@
+/* Dark Mode Overrides (if any specific tweaks needed beyond custom properties) */
+[data-theme="dark"] body {
+    color: #E5E7EB;
+}
+
+[data-theme="dark"] .section-title {
+    color: #F9FAFB;
+}
+
+[data-theme="dark"] .portfolio-overlay {
+    background: rgba(11, 15, 25, 0.9);
+}
+
+[data-theme="dark"] .btn-login:hover {
+    color: #F59E0B;
+}
+
+[data-theme="dark"] .footer-col ul li a:hover {
+    color: #F59E0B;
+}
+
+/* Animations CSS */
+.reveal-up, .reveal-left, .reveal-right, .img-reveal {
+    opacity: 0;
+}
+
+.img-reveal {
+    clip-path: inset(100% 0% 0% 0%);
+}
+
+/* Subtle Hover Zoom */
+.hover-zoom {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hover-zoom img {
+    transition: transform 0.6s ease;
+}
+
+.hover-zoom:hover img {
+    transform: scale(1.05);
+}
+
+

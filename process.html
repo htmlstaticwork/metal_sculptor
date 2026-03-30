@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Our Process | Forge & Form | Industrial Artistry</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23F59E0B' d='M256 0c-35.3 0-64 28.7-64 64V128H128c-35.3 0-64 28.7-64 64V384c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H320V64c0-35.3-28.7-64-64-64zM224 64c0-17.7 14.3-32 32-32s32 14.3 32 32v64H224V64zM112 192c0-8.8 7.2-16 16-16H384c8.8 0 16 7.2 16 16v80H112V192zM112 320H400v64c0 8.8-7.2 16-16 16H128c-8.8 0-16-7.2-16-16V320z' /></svg>">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .process-hero {
+            padding: 15rem 5% 5rem;
+            background: var(--surface-color);
+            text-align: center;
+        }
+
+        .process-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10rem;
+        }
+
+        .step-number {
+            font-size: 15rem;
+            font-family: var(--heading-font);
+            color: rgba(180, 83, 9, 0.1);
+            line-height: 0.8;
+            margin-right: 50px;
+            flex-shrink: 0;
+        }
+
+        [data-theme="dark"] .step-number {
+            color: rgba(245, 158, 11, 0.05);
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo"><i class="fa-solid fa-fire-burner"
+                style="margin-right: 15px; color: var(--accent-color);"></i>FORGE & FORM</a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="nav-link">Home <i class="fa-solid fa-chevron-down"
+                        style="font-size: 0.6rem;"></i></a>
+                <ul class="dropdown">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home-2.html">Home 2</a></li>
+                </ul>
+            </li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="process.html" class="nav-link active">Process</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions"><button class="btn-rtl-toggle" title="Toggle RTL"><i
+                    class="fa-solid fa-language"></i></button>
+            <button class="btn-theme-toggle"><i class="fa-solid fa-sun"></i></button>
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="signup.html" class="btn-signup">Sign Up</a>
+        </div><button class="hamburger" aria-label="Menu" style="background: none; border: none; font-size: 1.5rem; color: var(--text-primary); cursor: pointer;"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+
+    <header class="process-hero reveal-up">
+        <div class="container-fluid">
+            <h1 style="font-size: 6rem;">THE CRAFTING<br>DNA</h1>
+            <p style="font-size: 1.5rem; letter-spacing: 2px;">FROM ARCHITECTURAL BLUEPRINT TO STRUCTURAL REALITY</p>
+        </div>
+    </header>
+
+    <section class="container-fluid" style="padding: 10rem 5% 2rem;">
+        <!-- Step 1 -->
+        <div class="row align-items-center process-step">
+            <div class="col-md-6 reveal-left">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h2 style="font-size: 3rem;">CONCEPT & FEASIBILITY</h2>
+                    <p style="max-width: 600px;">Every project begins with a deep dive into the site’s topography and
+                        architectural context. We create detailed 3D models to ensure structural integrity and aesthetic
+                        harmony before the first piece of steel is cut.</p>
+                </div>
+            </div>
+            <div class="col-md-6 reveal-right">
+                <div class="img-reveal"><img src="assets/images/process_concept.png" class="step-img"
+                        alt="Step 1: Concept & Design" style="filter: grayscale(1);"></div>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="row align-items-center process-step flex-row-reverse"
+            style="margin-left: 0; margin-right: 0; margin-bottom: 0;">
+            <div class="col-md-6 reveal-right">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h2 style="font-size: 3rem;">INDUSTRIAL FABRICATION</h2>
+                    <p style="max-width: 600px;">Our workshop uses heavy industrial plasma cutters and precision
+                        welding. This is where raw material meets craftsmanship—heat, pressure, and over 20 years of
+                        technical expertise.</p>
+                </div>
+            </div>
+            <div class="col-md-6 reveal-left">
+                <div class="img-reveal"><img src="assets/images/process_fabrication.png" class="step-img"
+                        alt="Step 2: Industrial Fabrication" style="filter: grayscale(1);"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="faq-section" style="padding: 10rem 0; background-color: var(--surface-color);">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 reveal-up text-center">
+                    <h2 class="section-title" style="margin-bottom: 2rem;">COMMISSION INQUIRIES</h2>
+                    <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; text-align: center;">Frequent structural and
+                        procedural questions.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item reveal-up"
+                        style="border-bottom: 1px solid rgba(180, 83, 9, 0.3); padding: 2rem 0;">
+                        <h3 style="font-size: 1.5rem; font-family: var(--heading-font); color: var(--text-primary); margin-bottom: 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center;"
+                            onclick="this.nextElementSibling.style.display = (this.nextElementSibling.style.display === 'block') ? 'none' : 'block'; this.querySelector('i').classList.toggle('fa-minus'); this.querySelector('i').classList.toggle('fa-plus');">
+                            WHAT IS THE TYPICAL TIMELINE FOR A PUBLIC COMMISSION?
+                            <i class="fa-solid fa-plus"
+                                style="color: var(--accent-color); font-size: 1rem; transition: var(--transition);"></i>
+                        </h3>
+                        <div class="faq-answer"
+                            style="display: none; color: var(--text-secondary); padding-top: 1.5rem; padding-right: 2rem; line-height: 1.8;">
+                            Depending on the scale and material acquisition, most monumental pieces take between 6 to 12
+                            months from schematic design to final site installation.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item reveal-up"
+                        style="border-bottom: 1px solid rgba(180, 83, 9, 0.3); padding: 2rem 0; transition-delay: 0.1s;">
+                        <h3 style="font-size: 1.5rem; font-family: var(--heading-font); color: var(--text-primary); margin-bottom: 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center;"
+                            onclick="this.nextElementSibling.style.display = (this.nextElementSibling.style.display === 'block') ? 'none' : 'block'; this.querySelector('i').classList.toggle('fa-minus'); this.querySelector('i').classList.toggle('fa-plus');">
+                            DO YOU HANDLE INTERNATIONAL SHIPPING AND LOGISTICS?
+                            <i class="fa-solid fa-plus"
+                                style="color: var(--accent-color); font-size: 1rem; transition: var(--transition);"></i>
+                        </h3>
+                        <div class="faq-answer"
+                            style="display: none; color: var(--text-secondary); padding-top: 1.5rem; padding-right: 2rem; line-height: 1.8;">
+                            Yes. We regularly partner with specialized global art transport firms and structural
+                            engineers to ensure safe transit and compliant installation worldwide.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item reveal-up"
+                        style="border-bottom: 1px solid rgba(180, 83, 9, 0.3); padding: 2rem 0; transition-delay: 0.2s;">
+                        <h3 style="font-size: 1.5rem; font-family: var(--heading-font); color: var(--text-primary); margin-bottom: 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center;"
+                            onclick="this.nextElementSibling.style.display = (this.nextElementSibling.style.display === 'block') ? 'none' : 'block'; this.querySelector('i').classList.toggle('fa-minus'); this.querySelector('i').classList.toggle('fa-plus');">
+                            HOW DOES CORTEN STEEL WEATHER OVER TIME?
+                            <i class="fa-solid fa-plus"
+                                style="color: var(--accent-color); font-size: 1rem; transition: var(--transition);"></i>
+                        </h3>
+                        <div class="faq-answer"
+                            style="display: none; color: var(--text-secondary); padding-top: 1.5rem; padding-right: 2rem; line-height: 1.8;">
+                            Corten steel generates a protective rust patina over the first 1-3 years depending on the
+                            local climate. This oxide layer essentially halts further corrosion, making it incredibly
+                            durable for outdoor environments while allowing the artwork to evolve organically.
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-logo"><i class="fa-solid fa-fire-burner"
+                            style="margin-right: 15px; color: var(--accent-color);"></i>FORGE & FORM</h4>
+                    <p>Turning industrial strength into artistic expression. Based in the heart of the metalworking
+                        district, delivering worldwide.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>STAY CONNECTED</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fa-brands fa-vimeo"></i> Project Process</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="process.html">Process</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>WORKSHOP</h4>
+                    <p>128 Industrial Ave,<br>Steel Valley, CA 90210<br>contact@forgeform.art</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FORGE & FORM. ARCHITECTURAL METAL SCULPTURE. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
