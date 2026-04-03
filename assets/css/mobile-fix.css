@@ -95,6 +95,10 @@
     .blog-card-content h3 {
         font-size: 1.5rem !important;
     }
+    /* From the Forge link alignment */
+    .forge-logs-link {
+        text-align: left !important;
+    }
 }
 
 @media (max-width: 480px) {

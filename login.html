@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mastery Access | Forge & Form</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23F59E0B' d='M256 0c-35.3 0-64 28.7-64 64V128H128c-35.3 0-64 28.7-64 64V384c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H320V64c0-35.3-28.7-64-64-64zM224 64c0-17.7 14.3-32 32-32s32 14.3 32 32v64H224V64zM112 192c0-8.8 7.2-16 16-16H384c8.8 0 16 7.2 16 16v80H112V192zM112 320H400v64c0 8.8-7.2 16-16 16H128c-8.8 0-16-7.2-16-16V320z' /></svg>">
     <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">`n    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/mobile-fix.css">
     <style>
         .auth-container {
             height: 100vh;
@@ -142,14 +143,20 @@
             color: var(--accent-color);
         }
     </style>
-    <link rel="stylesheet" href="assets/css/mobile-fix.css"></head>
+</head>
 
 <body>
     <div class="auth-container">
+        <div class="nav-actions" style="position: absolute; top: 30px; right: 5%; z-index: 100;">
+            <button class="btn-rtl-toggle" title="Toggle RTL"><i class="fa-solid fa-language"></i></button>
+            <button class="btn-theme-toggle"><i class="fa-solid fa-sun"></i></button>
+        </div>
         <div class="auth-overlay"></div>
         <div class="auth-card">
-            <a href="index.html" class="auth-logo"><i class="fa-solid fa-fire-burner" style="margin-right: 15px; color: var(--accent-color);"></i>FORGE & FORM</a>
-            <h2 style="margin-bottom: 2rem; font-family: var(--heading-font); color: var(--text-primary);">ARTIST PORTAL ACCESS</h2>
+            <a href="index.html" class="auth-logo"><i class="fa-solid fa-fire-burner"
+                    style="margin-right: 15px; color: var(--accent-color);"></i>FORGE & FORM</a>
+            <h2 style="margin-bottom: 2rem; font-family: var(--heading-font); color: var(--text-primary);">ARTIST PORTAL
+                ACCESS</h2>
             <form action="index.html">
                 <input type="text" class="form-control" placeholder="USERNAME OR EMAIL" required>
                 <input type="password" class="form-control" placeholder="ACCESS KEY / PASSWORD" required>
@@ -159,37 +166,24 @@
                     <a href="#" style="color: var(--accent-color);">Forgot?</a>
                 </div>
                 <button type="submit" class="btn-auth">ENTER PORTAL</button>
-                
+
                 <div class="social-login">
-                    <p style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 2px;">Or Sign In With</p>
+                    <p
+                        style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 2px;">
+                        Or Sign In With</p>
                     <div class="social-icons">
                         <a href="#" class="social-btn"><i class="fa-brands fa-google"></i></a>
                         <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>
 
-                <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--text-secondary);">NO PORTAL ACCOUNT? <a href="signup.html"
-                        style="color: var(--accent-color); font-weight: bold;">SIGN UP</a></p>
+                <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--text-secondary);">NO PORTAL ACCOUNT? <a
+                        href="signup.html" style="color: var(--accent-color); font-weight: bold;">SIGN UP</a></p>
             </form>
         </div>
     </div>
 
-    <!-- Theme Initialization -->
-    <script>
-        const savedTheme = localStorage.getItem('theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', savedTheme);
-    </script>
+    <script src="assets/js/theme-toggle.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-

@@ -266,6 +266,16 @@ img {
   flex-direction: row-reverse;
 }
 
+[dir="rtl"] .auth-container .nav-actions {
+    position: absolute !important;
+    right: auto !important;
+    left: 5% !important;
+}
+
+[dir="rtl"] .auth-container .social-icons, [dir="rtl"] .auth-container .social-login {
+    direction: ltr; /* Keep social icons order consistent if desired, or let them flip */
+}
+
 [dir="rtl"] .nav-logo {
   margin-right: 0 !important;
   margin-left: 20px !important;
@@ -363,14 +373,9 @@ img {
   white-space: nowrap;
 }
 
-.btn-login:hover {
-    background-color: var(--accent-color);
-    color: #fff;
-}
-
 .btn-signup {
   background-color: var(--accent-color);
-  color: #fff;
+  color: #fff !important;
   padding: 0.7rem 1.5rem;
   border-radius: 4px;
   font-weight: 600;
@@ -381,12 +386,22 @@ img {
   white-space: nowrap;
 }
 
-.btn-signup:hover {
-    background-color: #92400E;
+/* Light Mode Hover (Rust Background) */
+.btn-login:hover {
+    background-color: var(--accent-color);
+    color: #fff !important;
 }
 
+.btn-signup:hover {
+    background-color: #92400E; /* Darker rust */
+    color: #fff !important;
+}
+
+/* Dark Mode Hover (Vibrant Orange Background) */
+[data-theme="dark"] .btn-login:hover,
 [data-theme="dark"] .btn-signup:hover {
-    background-color: #D97706;
+    background-color: var(--accent-color);
+    color: #000 !important;
 }
 
 /* Page Headers / Hero Sections */
