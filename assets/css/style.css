@@ -389,6 +389,40 @@ img {
     background-color: #D97706;
 }
 
+/* Page Headers / Hero Sections */
+.hero-section, .page-header, .blog-header, .process-hero {
+  padding: 15rem 5% 8rem;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: #fff !important;
+  overflow: hidden;
+}
+
+.hero-section::after, .page-header::after, .blog-header::after, .process-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(2, 6, 23, 0.6), rgba(2, 6, 23, 0.8));
+  z-index: 1;
+}
+
+.hero-section *, .page-header *, .blog-header *, .process-hero * {
+  position: relative;
+  z-index: 2;
+  color: #fff !important;
+}
+
+.hero-section p, .page-header p, .blog-header p, .process-hero p {
+  color: var(--accent-color) !important;
+  opacity: 1;
+}
+
 /* Footer */
 footer {
   background-color: var(--footer-bg);

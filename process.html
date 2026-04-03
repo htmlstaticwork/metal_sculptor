@@ -3,15 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Our Process | Forge & Form | Industrial Artistry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Process | Forge & Form | Industrial Sculpture Craft</title>
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23F59E0B' d='M256 0c-35.3 0-64 28.7-64 64V128H128c-35.3 0-64 28.7-64 64V384c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H320V64c0-35.3-28.7-64-64-64zM224 64c0-17.7 14.3-32 32-32s32 14.3 32 32v64H224V64zM112 192c0-8.8 7.2-16 16-16H384c8.8 0 16 7.2 16 16v80H112V192zM112 320H400v64c0 8.8-7.2 16-16 16H128c-8.8 0-16-7.2-16-16V320z' /></svg>">
     <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/mobile-fix.css">
     <style>
         .process-hero {
             padding: 15rem 5% 5rem;
@@ -44,11 +47,11 @@
 
         .step-img {
             width: 100%;
-            height: 600px;
+            height: auto;
             object-fit: cover;
         }
     </style>
-</head>
+    <link rel="stylesheet" href="assets/css/mobile-fix.css"></head>
 
 <body>
     <nav class="navbar">
@@ -79,7 +82,7 @@
         </div><button class="hamburger" aria-label="Menu" style="background: none; border: none; font-size: 1.5rem; color: var(--text-primary); cursor: pointer;"><i class="fa-solid fa-bars"></i></button>
     </nav>
 
-    <header class="process-hero reveal-up">
+    <header class="process-hero reveal-up" style="background-image: url('assets/images/hero-process.png');">
         <div class="container-fluid">
             <h1 style="font-size: 6rem;">THE CRAFTING<br>DNA</h1>
             <p style="font-size: 1.5rem; letter-spacing: 2px;">FROM ARCHITECTURAL BLUEPRINT TO STRUCTURAL REALITY</p>
@@ -89,7 +92,7 @@
     <section class="container-fluid" style="padding: 5rem 5% 2rem;">
         <!-- Step 1 -->
         <div class="row align-items-center process-step">
-            <div class="col-md-6 reveal-left">
+            <div class="col-12 col-md-6 reveal-left">
                 <div class="step-number">01</div>
                 <div class="step-content">
                     <h2 style="font-size: 3rem;">CONCEPT & FEASIBILITY</h2>
@@ -98,7 +101,7 @@
                         harmony before the first piece of steel is cut.</p>
                 </div>
             </div>
-            <div class="col-md-6 reveal-right">
+            <div class="col-12 col-md-6 reveal-right">
                 <div class="img-reveal"><img src="assets/images/process_concept.png" class="step-img"
                         alt="Step 1: Concept & Design" style="filter: grayscale(1);"></div>
             </div>
@@ -107,7 +110,7 @@
         <!-- Step 2 -->
         <div class="row align-items-center process-step flex-row-reverse"
             style="margin-left: 0; margin-right: 0;">
-            <div class="col-md-6 reveal-right">
+            <div class="col-12 col-md-6 reveal-right">
                 <div class="step-number">02</div>
                 <div class="step-content">
                     <h2 style="font-size: 3rem;">INDUSTRIAL FABRICATION</h2>
@@ -116,7 +119,7 @@
                         technical expertise.</p>
                 </div>
             </div>
-            <div class="col-md-6 reveal-left">
+            <div class="col-12 col-md-6 reveal-left">
                 <div class="img-reveal"><img src="assets/images/process_fabrication.png" class="step-img"
                         alt="Step 2: Industrial Fabrication" style="filter: grayscale(1);"></div>
             </div>
@@ -124,14 +127,14 @@
 
         <!-- Step 3 -->
         <div class="row align-items-center process-step">
-            <div class="col-md-6 reveal-left">
+            <div class="col-12 col-md-6 reveal-left">
                 <div class="step-number">03</div>
                 <div class="step-content">
                     <h2 style="font-size: 3rem;">ASSEMBLY & TESTING</h2>
                     <p style="max-width: 600px;">Each component is meticulously assembled and structural integrity is rigorously tested. For large-scale public work, we perform full-scale dry fits in our facility to ensure every joint and weld meets architectural standards.</p>
                 </div>
             </div>
-            <div class="col-md-6 reveal-right">
+            <div class="col-12 col-md-6 reveal-right">
                 <div class="img-reveal"><img src="assets/images/process_assembly.png" class="step-img"
                         alt="Step 3: Assembly & Testing" style="filter: grayscale(1);"></div>
             </div>
@@ -140,14 +143,14 @@
         <!-- Step 4 -->
         <div class="row align-items-center process-step flex-row-reverse"
             style="margin-left: 0; margin-right: 0; margin-bottom: 0;">
-            <div class="col-md-6 reveal-right">
+            <div class="col-12 col-md-6 reveal-right">
                 <div class="step-number">04</div>
                 <div class="step-content">
                     <h2 style="font-size: 3rem;">SITE INSTALLATION</h2>
                     <p style="max-width: 600px;">The final journey. Our specialized installation team handles the logistics of transporting and crane-mounting the sculpture. On-site, we perform the final patina finishing, ensuring the work integrates perfectly with its permanent architectural home.</p>
                 </div>
             </div>
-            <div class="col-md-6 reveal-left">
+            <div class="col-12 col-md-6 reveal-left">
                 <div class="img-reveal"><img src="assets/images/process_installation_sculpture.png" class="step-img"
                         alt="Step 4: Site Installation" style="filter: grayscale(1);"></div>
             </div>
@@ -155,7 +158,7 @@
 
     </section>
 
-    <section class="faq-section" style="padding: 5rem 0; background-color: var(--surface-color);">
+    <section class="faq-section" class="standard-section" background-color: var(--surface-color);">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 reveal-up text-center">
@@ -165,7 +168,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-12 col-lg-8">
                     <!-- FAQ Item 1 -->
                     <div class="faq-item reveal-up"
                         style="border-bottom: 1px solid rgba(180, 83, 9, 0.3); padding: 2rem 0;">
@@ -260,4 +263,8 @@
 </body>
 
 </html>
+
+
+
+
 

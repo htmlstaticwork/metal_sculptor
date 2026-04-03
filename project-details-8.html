@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Monochrome Void | Project Details | Forge & Form</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23F59E0B' d='M256 0c-35.3 0-64 28.7-64 64V128H128c-35.3 0-64 28.7-64 64V384c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H320V64c0-35.3-28.7-64-64-64zM224 64c0-17.7 14.3-32 32-32s32 14.3 32 32v64H224V64zM112 192c0-8.8 7.2-16 16-16H384c8.8 0 16 7.2 16 16v80H112V192zM112 320H400v64c0 8.8-7.2 16-16 16H128c-8.8 0-16-7.2-16-16V320z' /></svg>">
@@ -15,8 +17,10 @@
         .spec-item { margin-bottom: 2rem; }
         .spec-label { font-family: var(--heading-font); color: var(--accent-color); font-size: 1.2rem; display: block; margin-bottom: 0.5rem; }
         .spec-value { font-size: 1.1rem; opacity: 0.8; }
-        .process-shot { height: 400px; width: 100%; object-fit: cover; margin-bottom: 1.5rem; }
+        .process-shot { height: auto; width: 100%; object-fit: cover; margin-bottom: 1.5rem; }
     </style>
+
+    <link rel="stylesheet" href="assets/css/mobile-fix.css">
 </head>
 <body>
     <nav class="navbar">
@@ -48,25 +52,25 @@
 
     <div class="container project-meta" style="width: 80%; text-align: center;">
         <div class="row justify-content-center">
-            <div class="col-md-9">
+            <div class="col-12 col-md-9">
                 <h1 style="font-size: 4rem; margin-bottom: 1.5rem;">MONOCHROME VOID</h1>
                 <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 3rem;">An experiment in absence. By applying a matte, ultra-black powder coating to complex steel geometry, Monochrome Void absorbs light and confounds depth perception, challenging the viewer to find the physical perimeter of the object.</p>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-3 spec-item">
+            <div class="col-12 col-md-3 spec-item">
                 <span class="spec-label">DIMENSIONS</span>
                 <span class="spec-value">3m Height x 3m Width</span>
             </div>
-            <div class="col-md-3 spec-item">
+            <div class="col-12 col-md-3 spec-item">
                 <span class="spec-label">MATERIAL</span>
                 <span class="spec-value">Powder Coated Steel</span>
             </div>
-            <div class="col-md-3 spec-item">
+            <div class="col-12 col-md-3 spec-item">
                 <span class="spec-label">LOCATION</span>
                 <span class="spec-value">Minimalist Art Fair, Berlin</span>
             </div>
-            <div class="col-md-3 spec-item">
+            <div class="col-12 col-md-3 spec-item">
                 <span class="spec-label">CLIENT</span>
                 <span class="spec-value">Speculative Exhibition</span>
             </div>
@@ -76,17 +80,17 @@
     <section class="container" style="padding: 10rem 0;">
         <h2 class="section-title reveal-up">THE CRAFTING PROCESS</h2>
         <div class="row g-4">
-            <div class="col-md-4 reveal-up">
+            <div class="col-12 col-md-4 reveal-up">
                 <img src="assets/images/process.png" class="process-shot" alt="C1">
                 <h4>01. Material Selection</h4>
                 <p>Sourcing high-grade corten steel from industrial mills to ensure structural longevity.</p>
             </div>
-            <div class="col-md-4 reveal-up">
+            <div class="col-12 col-md-4 reveal-up">
                 <img src="assets/images/hero.png" class="process-shot" alt="C2" style="filter: brightness(0.5) contrast(1.2);">
                 <h4>02. Precision Cutting</h4>
                 <p>Plasma cutting components based on 3D architectural blueprints to sub-millimeter accuracy.</p>
             </div>
-            <div class="col-md-4 reveal-up">
+            <div class="col-12 col-md-4 reveal-up">
                 <img src="assets/images/exhibition.png" class="process-shot" alt="C3" style="filter: sepia(1) brightness(0.7);">
                 <h4>03. Assembly & Welding</h4>
                 <p>Over 800 linear feet of high-strength structural welding performed by master artisans.</p>
@@ -95,7 +99,7 @@
     </section>
 
     <div class="container-fluid reveal-up" style="padding: 0;">
-        <img src="assets/images/portfolio-1.png" alt="Large Detail" style="width: 100%; max-height: 800px; object-fit: cover; filter: grayscale(1);">
+        <img src="assets/images/portfolio-1.png" alt="Large Detail" style="width: 100%; max-height: auto; object-fit: cover; filter: grayscale(1);">
     </div>
 
     <footer>
@@ -140,6 +144,11 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 
 

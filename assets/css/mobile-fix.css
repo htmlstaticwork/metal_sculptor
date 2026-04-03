@@ -1,0 +1,117 @@
+/* Global Responsive Fixes for Metal Sculptor Portfolio */
+
+@media (max-width: 1024px) {
+    /* Font Scaling for all headers */
+    h1 {
+        font-size: clamp(2.5rem, 8vw, 4rem) !important;
+        line-height: 1 !important;
+    }
+
+    h2 {
+        font-size: clamp(2rem, 7vw, 3rem) !important;
+        line-height: 1.1 !important;
+    }
+
+    .section-title {
+        font-size: clamp(2rem, 8vw, 3.5rem) !important;
+        margin-bottom: 2.5rem !important;
+    }
+
+    /* Page Headers */
+    .page-header, .blog-header, .process-hero, .hero-section {
+        padding: 10rem 5% 5rem !important;
+    }
+
+    .page-header h1, .blog-header h1, .process-hero h1 {
+        font-size: clamp(3rem, 12vw, 5rem) !important;
+    }
+
+    /* Spacing */
+    section {
+        padding: 4rem 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* Navbar branding */
+    .nav-logo {
+        font-size: 1.1rem !important;
+    }
+
+    /* About Page Specifics */
+    .stat-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    .stat-item h3 {
+        font-size: 3rem !important;
+    }
+
+    .quote {
+        font-size: 1.8rem !important;
+        padding-left: 20px !important;
+        margin: 3rem 0 !important;
+    }
+
+    /* Fixed height images */
+    [style*="height: 800px"], [style*="height: 500px"] {
+        height: 400px !important;
+    }
+
+    /* Portfolio Grid */
+    .portfolio-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .gallery-item {
+        height: 350px !important;
+    }
+
+    .gallery-content h3 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
+    .footer-col {
+        text-align: center !important;
+    }
+
+    [dir="rtl"] .footer-col {
+        text-align: center !important;
+    }
+    
+    /* Blog Cards */
+    .blog-card-content h3 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .page-header h1 {
+        font-size: 2.8rem !important;
+    }
+
+    .btn-signup, .btn-login {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero-content .btn-signup + .btn-login {
+        margin-left: 0 !important;
+    }
+}

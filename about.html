@@ -2,6 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Artist | Forge & Form | Metal Sculptor Biography</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23F59E0B' d='M256 0c-35.3 0-64 28.7-64 64V128H128c-35.3 0-64 28.7-64 64V384c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H320V64c0-35.3-28.7-64-64-64zM224 64c0-17.7 14.3-32 32-32s32 14.3 32 32v64H224V64zM112 192c0-8.8 7.2-16 16-16H384c8.8 0 16 7.2 16 16v80H112V192zM112 320H400v64c0 8.8-7.2 16-16 16H128c-8.8 0-16-7.2-16-16V320z' /></svg>">
     <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/animations.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/mobile-fix.css">
     <style>
         .about-hero { padding: 15rem 5% 5rem; background: var(--surface-color); border-bottom: 30px solid var(--background-color); text-align: center; }
         .about-sidebar { padding: 4rem 5%; background: var(--background-color); }
@@ -42,7 +44,7 @@
         </div><button class="hamburger" aria-label="Menu" style="background: none; border: none; font-size: 1.5rem; color: var(--text-primary); cursor: pointer;"><i class="fa-solid fa-bars"></i></button>
     </nav>
 
-    <header class="about-hero reveal-up">
+    <header class="page-header reveal-up" style="background-image: url('assets/images/hero-about.png');">
         <div class="container-fluid">
             <h1 style="font-size: 6rem; line-height: 0.8;">BORN FROM THE<br>FORGE</h1>
             <p style="font-size: 1.5rem; letter-spacing: 2px;">THE PHILOSOPHY OF ARTHUR STEEL</p>
