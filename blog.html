@@ -13,6 +13,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        .blog-img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
         .blog-card {
             background: var(--surface-color);
             border: 1px solid rgba(255, 255, 255, 0.05);
@@ -20,17 +27,53 @@
             cursor: pointer;
             height: 100%;
             border-bottom: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         .blog-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
             border-bottom-color: var(--accent-color);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
         }
 
-        .blog-img {
+        .blog-card:hover .blog-img {
+            transform: scale(1.1);
+        }
+
+        .blog-img-wrapper {
+            overflow: hidden;
             height: 300px;
-            width: 100%;
-            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .btn-read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: auto;
+            padding-top: 1.5rem;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+        }
+
+        .btn-read-more i {
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover .btn-read-more {
+            color: var(--text-primary);
+        }
+
+        .blog-card:hover .btn-read-more i {
+            transform: translateX(8px);
         }
 
         .blog-category {
@@ -93,78 +136,96 @@
             <!-- Blog 1 -->
             <div class="col-md-4 reveal-up">
                 <a href="blog-details-1.html" class="blog-card d-block">
-                    <img src="assets/images/process.png" class="blog-img" alt="B1">
+                    <div class="blog-img-wrapper">
+                        <img src="assets/images/process.png" class="blog-img" alt="B1">
+                    </div>
                     <div class="blog-card-content">
                         <span class="blog-category">MATERIALITY</span>
                         <div class="blog-meta">MARCH 12, 2026 | ARTHUR STEEL</div>
                         <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">The Living Rust: Corten Evolution</h3>
                         <p style="color: var(--text-secondary);">Exploring the beautiful oxidation process of Corten
                             steel and why it's the gold standard for outdoor sculpture.</p>
+                        <div class="btn-read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </a>
             </div>
             <!-- Blog 2 -->
             <div class="col-md-4 reveal-up">
                 <a href="blog-details-2.html" class="blog-card d-block">
-                    <img src="assets/images/hero.png" class="blog-img" alt="B2">
+                    <div class="blog-img-wrapper">
+                        <img src="assets/images/hero.png" class="blog-img" alt="B2">
+                    </div>
                     <div class="blog-card-content">
                         <span class="blog-category">TECHNIQUE</span>
                         <div class="blog-meta">FEB 28, 2026 | ARTHUR STEEL</div>
                         <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Precision vs. Fluidity in Large Scale</h3>
                         <p style="color: var(--text-secondary);">How architectural modeling ensures our multi-ton
                             installations remain safe and stunning.</p>
+                        <div class="btn-read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </a>
             </div>
             <!-- Blog 3 -->
             <div class="col-md-4 reveal-up">
                 <a href="blog-details-3.html" class="blog-card d-block">
-                    <img src="assets/images/exhibition.png" class="blog-img" alt="B3">
+                    <div class="blog-img-wrapper">
+                        <img src="assets/images/exhibition.png" class="blog-img" alt="B3">
+                    </div>
                     <div class="blog-card-content">
                         <span class="blog-category">GALLERY</span>
                         <div class="blog-meta">FEB 05, 2026 | ARTHUR STEEL</div>
                         <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">The Echo of the Museum Space artworks</h3>
                         <p style="color: var(--text-secondary);">Why gallery lighting is as important as the welding
                             itself when presenting steel artworks in exhibition halls.</p>
+                        <div class="btn-read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </a>
             </div>
             <!-- Blog 4 -->
             <div class="col-md-4 reveal-up">
                 <a href="blog-details-4.html" class="blog-card d-block">
-                    <img src="assets/images/portfolio-1.png" class="blog-img" alt="B4">
+                    <div class="blog-img-wrapper">
+                        <img src="assets/images/portfolio-1.png" class="blog-img" alt="B4">
+                    </div>
                     <div class="blog-card-content">
                         <span class="blog-category">PORTFOLIO</span>
                         <div class="blog-meta">JAN 20, 2026 | ARTHUR STEEL</div>
                         <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Urban Scale & Public Interaction</h3>
                         <p style="color: var(--text-secondary);">The challenges and rewards of installing large-scale
                             metal works in bustling city centers and public plazas.</p>
+                        <div class="btn-read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </a>
             </div>
             <!-- Blog 5 -->
             <div class="col-md-4 reveal-up">
                 <a href="blog-details-5.html" class="blog-card d-block">
-                    <img src="assets/images/portfolio-2.png" class="blog-img" alt="B5">
+                    <div class="blog-img-wrapper">
+                        <img src="assets/images/portfolio-2.png" class="blog-img" alt="B5">
+                    </div>
                     <div class="blog-card-content">
                         <span class="blog-category">PROCESS</span>
                         <div class="blog-meta">JAN 12, 2026 | ARTHUR STEEL</div>
                         <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">The Heat Treatment: Precision Welding</h3>
                         <p style="color: var(--text-secondary);">A deep dive into high-grade structural welding and the
                             heat control required for massive steel plates.</p>
+                        <div class="btn-read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </a>
             </div>
             <!-- Blog 6 -->
             <div class="col-md-4 reveal-up">
                 <a href="blog-details-6.html" class="blog-card d-block">
-                    <img src="assets/images/process.png" class="blog-img" alt="B6" style="filter: hue-rotate(90deg);">
+                    <div class="blog-img-wrapper">
+                        <img src="assets/images/process.png" class="blog-img" alt="B6" style="filter: hue-rotate(90deg);">
+                    </div>
                     <div class="blog-card-content">
                         <span class="blog-category">SUSTAINABILITY</span>
                         <div class="blog-meta">DEC 28, 2025 | ARTHUR STEEL</div>
                         <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">The Arc of Sustainability economy</h3>
                         <p style="color: var(--text-secondary);">How we source recycled industrial steel to create
                             environmentally conscious art for a circular economy.</p>
+                        <div class="btn-read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </a>
             </div>
