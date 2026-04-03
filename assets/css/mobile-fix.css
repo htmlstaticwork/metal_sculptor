@@ -99,6 +99,20 @@
     .forge-logs-link {
         text-align: left !important;
     }
+
+    /* Portfolio Filter Nav Fix */
+    .filter-nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 1rem !important;
+        padding: 2rem 1rem !important;
+    }
+
+    .filter-btn {
+        margin: 0 !important;
+        font-size: 1rem !important;
+    }
 }
 
 @media (max-width: 480px) {
