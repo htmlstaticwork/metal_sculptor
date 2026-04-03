@@ -16,12 +16,12 @@
         .contact-hero { padding: 15rem 5% 5rem; background: var(--surface-color); text-align: center; }
         .form-group { margin-bottom: 2.5rem; }
         .form-label { display: block; font-family: var(--heading-font); font-size: 1.2rem; margin-bottom: 0.5rem; letter-spacing: 1px; color: var(--accent-color); }
-        .form-control { width: 100%; background: var(--background-color); border: 1px solid rgba(255,255,255,0.1); padding: 1.2rem; color: var(--text-primary); font-family: var(--body-font); border-radius: 0; outline: none; transition: border-color 0.3s ease; }
-        .form-control:focus { border-color: var(--accent-color); }
+        .form-control { width: 100%; background: var(--background-color); border: 1px solid rgba(128, 128, 128, 0.2); padding: 1.2rem; color: var(--text-primary); font-family: var(--body-font); border-radius: 0; outline: none; transition: all 0.3s ease; }
+        .form-control:focus { border-color: var(--accent-color); box-shadow: 0 0 10px rgba(180, 83, 9, 0.1); }
         .btn-submit { background: var(--accent-color); color: #fff; width: 100%; border: none; padding: 1.5rem; font-family: var(--heading-font); font-size: 1.5rem; cursor: pointer; transition: 0.3s ease; }
         .btn-submit:hover { background: #92400E; }
-    </style>
-    <link rel="stylesheet" href="assets/css/mobile-fix.css"></head>
+        .contact-social-link:hover { color: var(--accent-color) !important; transform: translateY(-3px); }
+    </style></head>
 <body>
     <nav class="navbar">
         <a href="index.html" class="nav-logo"><i class="fa-solid fa-fire-burner" style="margin-right: 15px; color: var(--accent-color);"></i>FORGE & FORM</a>
@@ -72,10 +72,10 @@
                 <div style="margin-bottom: 4rem;">
                     <h4 style="color: var(--accent-color);">FOLLOW THE PROCESS</h4>
                     <div style="display: flex; gap: 1.5rem; margin-top: 1rem;">
-                        <a href="#" style="font-size: 1.5rem; color: var(--text-primary); transition: 0.3s ease;"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" style="font-size: 1.5rem; color: var(--text-primary); transition: 0.3s ease;"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#" style="font-size: 1.5rem; color: var(--text-primary); transition: 0.3s ease;"><i class="fa-brands fa-vimeo-v"></i></a>
-                        <a href="#" style="font-size: 1.5rem; color: var(--text-primary); transition: 0.3s ease;"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="contact-social-link" style="font-size: 1.5rem; color: var(--text-primary); transition: 0.3s ease;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="contact-social-link" style="font-size: 1.5rem; color: var(--text-primary); transition: 0.3s ease;"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="contact-social-link" style="font-size: 1.5rem; color: var(--text-primary); transition: 0.3s ease;"><i class="fa-brands fa-vimeo-v"></i></a>
+                        <a href="#" class="contact-social-link" style="font-size: 1.5rem; color: var(--text-primary); transition: 0.3s ease;"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
         <div class="row reveal-up" style="margin-top: 5rem;">
             <div class="col-12">
                 <h2 style="font-size: 3rem; margin-bottom: 2rem;">THE LOCATION</h2>
-                <div style="width: 100%; height: auto; filter: grayscale(1) invert(1) contrast(1.2) opacity(0.8);">
+                <div style="width: 100%; height: 450px; filter: grayscale(1) invert(1) contrast(1.2) opacity(0.8);">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.01827986548!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1633000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.6; text-transform: uppercase; letter-spacing: 2px;">Studio visits by appointment only.</p>
