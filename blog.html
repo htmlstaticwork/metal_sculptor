@@ -97,6 +97,31 @@
 
         .blog-card-content {
             padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .blog-card-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            min-height: 5rem; /* Space for 3 lines on desktop */
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.2;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 991px) {
+            .blog-img-wrapper {
+                height: 250px;
+            }
+            .blog-card-content h3 {
+                font-size: 1.5rem !important;
+                min-height: 4.5rem; /* Adjusts for smaller font size on tablet */
+            }
         }
     </style>
 </head>
@@ -138,16 +163,15 @@
     <section class="container" style="padding-bottom: 10rem;">
         <div class="row g-4">
             <!-- Blog 1 -->
-            <div class="col-md-6 col-lg-4 reveal-up">
-                <a href="blog-details-1.html" class="blog-card d-block">
+            <div class="col-md-6 col-lg-4 reveal-up d-flex">
+                <a href="blog-details-1.html" class="blog-card d-flex flex-column w-100">
                     <div class="blog-img-wrapper">
                         <img src="assets/images/process.png" class="blog-img" alt="B1">
                     </div>
-                    <div class="blog-card-content">
+                    <div class="blog-card-content d-flex flex-column flex-grow-1">
                         <span class="blog-category">MATERIALITY</span>
                         <div class="blog-meta">MAR 12, 2026 | ARTHUR STEEL</div>
-                        <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">The Living Rust: Exploring Corten
-                            Evolution</h3>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">The Living Rust: Exploring Corten Evolution</h3>
                         <p style="color: var(--text-secondary);">Exploring the beautiful oxidation process of Corten
                             steel and why it's the gold standard for outdoor sculpture.</p>
                         <div class="btn-read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></div>
@@ -155,12 +179,12 @@
                 </a>
             </div>
             <!-- Blog 2 -->
-            <div class="col-md-6 col-lg-4 reveal-up">
-                <a href="blog-details-2.html" class="blog-card d-block">
+            <div class="col-md-6 col-lg-4 reveal-up d-flex">
+                <a href="blog-details-2.html" class="blog-card d-flex flex-column w-100">
                     <div class="blog-img-wrapper">
                         <img src="assets/images/hero.png" class="blog-img" alt="B2">
                     </div>
-                    <div class="blog-card-content">
+                    <div class="blog-card-content d-flex flex-column flex-grow-1">
                         <span class="blog-category">TECHNIQUE</span>
                         <div class="blog-meta">FEB 28, 2026 | ARTHUR STEEL</div>
                         <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Precision vs. Fluidity in Large Scale</h3>
@@ -171,12 +195,12 @@
                 </a>
             </div>
             <!-- Blog 3 -->
-            <div class="col-md-6 col-lg-4 reveal-up">
-                <a href="blog-details-3.html" class="blog-card d-block">
+            <div class="col-md-6 col-lg-4 reveal-up d-flex">
+                <a href="blog-details-3.html" class="blog-card d-flex flex-column w-100">
                     <div class="blog-img-wrapper">
                         <img src="assets/images/exhibition.png" class="blog-img" alt="B3">
                     </div>
-                    <div class="blog-card-content">
+                    <div class="blog-card-content d-flex flex-column flex-grow-1">
                         <span class="blog-category">GALLERY</span>
                         <div class="blog-meta">FEB 05, 2026 | ARTHUR STEEL</div>
                         <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">The Echo of the Museum Space artworks</h3>
@@ -187,16 +211,15 @@
                 </a>
             </div>
             <!-- Blog 4 -->
-            <div class="col-md-6 col-lg-4 reveal-up">
-                <a href="blog-details-4.html" class="blog-card d-block">
+            <div class="col-md-6 col-lg-4 reveal-up d-flex">
+                <a href="blog-details-4.html" class="blog-card d-flex flex-column w-100">
                     <div class="blog-img-wrapper">
                         <img src="assets/images/portfolio-1.png" class="blog-img" alt="B4">
                     </div>
-                    <div class="blog-card-content">
+                    <div class="blog-card-content d-flex flex-column flex-grow-1">
                         <span class="blog-category">PORTFOLIO</span>
                         <div class="blog-meta">JAN 20, 2026 | ARTHUR STEEL</div>
-                        <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">The Large Urban Scale and Public
-                            Interaction</h3>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">The Large Urban Scale and Public Interaction</h3>
                         <p style="color: var(--text-secondary);">The challenges and rewards of installing large-scale
                             metal works in bustling city centers and public plazas.</p>
                         <div class="btn-read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></div>
@@ -204,16 +227,15 @@
                 </a>
             </div>
             <!-- Blog 5 -->
-            <div class="col-md-6 col-lg-4 reveal-up">
-                <a href="blog-details-5.html" class="blog-card d-block">
+            <div class="col-md-6 col-lg-4 reveal-up d-flex">
+                <a href="blog-details-5.html" class="blog-card d-flex flex-column w-100">
                     <div class="blog-img-wrapper">
                         <img src="assets/images/portfolio-2.png" class="blog-img" alt="B5">
                     </div>
-                    <div class="blog-card-content">
+                    <div class="blog-card-content d-flex flex-column flex-grow-1">
                         <span class="blog-category">PROCESS</span>
                         <div class="blog-meta">JAN 12, 2026 | ARTHUR STEEL</div>
-                        <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Structural Welding: Precision Welding
-                            Control</h3>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Structural Welding: Precision Welding Control</h3>
                         <p style="color: var(--text-secondary);">A deep dive into high-grade structural welding and the
                             heat control required for massive steel plates.</p>
                         <div class="btn-read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></div>
@@ -221,13 +243,13 @@
                 </a>
             </div>
             <!-- Blog 6 -->
-            <div class="col-md-6 col-lg-4 reveal-up">
-                <a href="blog-details-6.html" class="blog-card d-block">
+            <div class="col-md-6 col-lg-4 reveal-up d-flex">
+                <a href="blog-details-6.html" class="blog-card d-flex flex-column w-100">
                     <div class="blog-img-wrapper">
                         <img src="assets/images/process.png" class="blog-img" alt="B6"
                             style="filter: hue-rotate(90deg);">
                     </div>
-                    <div class="blog-card-content">
+                    <div class="blog-card-content d-flex flex-column flex-grow-1">
                         <span class="blog-category">SUSTAINABILITY</span>
                         <div class="blog-meta">DEC 28, 2025 | ARTHUR STEEL</div>
                         <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem;">The Arc of Sustainability economy</h3>
