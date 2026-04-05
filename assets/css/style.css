@@ -496,6 +496,17 @@ section {
   margin-bottom: 4rem;
 }
 
+/* Principal Bio Image Alignment */
+div.reveal-right img[alt="A1"] {
+  display: block;
+  margin-inline: auto !important;
+}
+
+div.reveal-right img[alt="A1"] + p {
+  text-align: center !important;
+  width: 100%;
+}
+
 section:last-of-type {
   padding-bottom: 2rem !important;
 }
@@ -518,8 +529,8 @@ section:last-of-type {
     box-sizing: border-box !important;
   }
   
-  .nav-logo {
-    font-size: 1.25rem !important;
+  .nav-logo, .footer-logo, .auth-logo {
+    font-size: 2rem !important;
     order: 1 !important; /* Force to top-left */
     flex: 0 1 auto !important;
     max-width: 70% !important;

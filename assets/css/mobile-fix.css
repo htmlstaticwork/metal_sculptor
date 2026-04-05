@@ -39,8 +39,8 @@
     }
 
     /* Navbar branding */
-    .nav-logo {
-        font-size: 1.1rem !important;
+    .nav-logo, .footer-logo, .auth-logo {
+        font-size: 2rem !important;
     }
 
     /* About Page Specifics */
@@ -57,6 +57,18 @@
         font-size: 1.8rem !important;
         padding-left: 20px !important;
         margin: 3rem 0 !important;
+        text-align: center !important;
+        border-left: none !important;
+    }
+
+    /* About page image alignment */
+    .col-md-4.reveal-right img[alt="A1"] {
+        margin-inline: auto !important;
+        display: block !important;
+    }
+
+    .col-md-4.reveal-right p {
+        text-align: center !important;
     }
 
     /* Fixed height images */
@@ -95,6 +107,109 @@
     .blog-card-content h3 {
         font-size: 1.5rem !important;
     }
+
+    /* About Brief Section Fixes */
+    .about-brief .reveal-left {
+        text-align: center !important;
+        margin-bottom: 3rem !important;
+    }
+
+    .about-brief .section-title {
+        text-align: center !important;
+        margin-inline: auto !important;
+    }
+
+    .about-brief p {
+        margin-inline: auto !important;
+        text-align: center !important;
+    }
+
+    /* Master Welder (Home-2 Arthur Steel) Section Fixes */
+    .master-welder .reveal-left {
+        text-align: center !important;
+        margin-bottom: 3.5rem !important;
+    }
+
+    .master-welder .section-title {
+        text-align: center !important;
+        margin-inline: auto !important;
+    }
+
+    .master-welder p {
+        margin-inline: auto !important;
+        text-align: center !important;
+    }
+
+    /* Home-2 Featured Section & exhibition centering */
+    #featured .reveal-left, #featured .reveal-right, .exhibition-presence .reveal-left {
+        text-align: center !important;
+        margin-bottom: 3rem !important;
+    }
+
+    #featured h2, .exhibition-presence h2 {
+        text-align: center !important;
+        margin-inline: auto !important;
+    }
+
+    #featured .row {
+        margin-top: 4rem !important;
+        margin-bottom: 4rem !important;
+    }
+
+    #featured div[style*="width: 50px"] {
+        margin-inline: auto !important;
+    }
+
+    .exhibition-presence p {
+        border-left: none !important;
+        padding-left: 0 !important;
+        text-align: center !important;
+    }
+
+    .recognition-grid {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+    }
+
+    /* Process Page Specific Fixes */
+    .process-hero {
+        padding: 10rem 5% 4rem !important;
+    }
+
+    .process-hero h1 {
+        font-size: clamp(2.5rem, 10vw, 4rem) !important;
+    }
+
+    .process-step {
+        margin-bottom: 4rem !important;
+        text-align: center !important;
+    }
+
+    .step-number {
+        font-size: 8rem !important;
+        margin-right: 0 !important;
+        margin-bottom: 1rem !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .step-content {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .step-content h2 {
+        font-size: 2rem !important;
+    }
+
+    .step-content p {
+        margin-inline: auto !important;
+    }
+
+    .process-step .reveal-left, .process-step .reveal-right {
+        margin-bottom: 2rem !important;
+    }
+
     /* From the Forge link alignment */
     .forge-logs-link {
         text-align: left !important;

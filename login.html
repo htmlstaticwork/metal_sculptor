@@ -122,37 +122,51 @@
         }
 
         .social-btn {
-            width: 50px;
-            height: auto;
+            width: 55px;
+            height: 55px;
             border-radius: 50%;
-            background: var(--background-color);
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: var(--surface-color);
+            border: 2px solid rgba(0, 0, 0, 0.08);
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--text-primary);
-            font-size: 1.2rem;
-            transition: 0.3s ease;
+            font-size: 1.3rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            z-index: 1;
         }
 
         [data-theme="dark"] .social-btn {
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.08);
         }
 
         .social-btn:hover {
-            background: rgba(var(--accent-color), 0.1);
+            transform: translateY(-5px);
             border-color: var(--accent-color);
             color: var(--accent-color);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background: transparent;
+        }
+
+        [data-theme="dark"] .social-btn:hover {
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .auth-card a {
+            transition: all 0.3s ease;
+        }
+
+        .auth-card a:hover {
+            opacity: 0.7;
+            text-decoration: underline !important;
         }
     </style>
 </head>
 
 <body>
     <div class="auth-container">
-        <div class="nav-actions" style="position: absolute; top: 30px; right: 5%; z-index: 100;">
-            <button class="btn-rtl-toggle" title="Toggle RTL"><i class="fa-solid fa-language"></i></button>
-            <button class="btn-theme-toggle"><i class="fa-solid fa-sun"></i></button>
-        </div>
         <div class="auth-overlay"></div>
         <div class="auth-card">
             <a href="index.html" class="auth-logo"><i class="fa-solid fa-fire-burner"

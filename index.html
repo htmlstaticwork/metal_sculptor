@@ -103,7 +103,7 @@
         </div>
     </section>
 
-    <section class="material-philosophy" class="standard-section" background-color: var(--background-color);">
+    <section class="material-philosophy standard-section" style="background-color: var(--background-color);">
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="col-12 reveal-up">
@@ -118,8 +118,7 @@
                     <div class="material-img-wrapper">
                         <img src="assets/images/material-corten.png" alt="Oxidized Corten Texture" class="material-img">
                     </div>
-                    <h3 style="font-family: var(--heading-font); font-size: 1.8rem; margin-bottom: 1rem;">OXIDIZED
-                        CORTEN</h3>
+                    <h3 style="font-family: var(--heading-font); font-size: 1.8rem; margin-bottom: 1rem;">OXIDIZED CORTEN</h3>
                     <p style="color: var(--text-secondary); font-size: 0.95rem; margin-inline: auto; max-width: 300px;">A living metal that evolves with its
                         environment, developing a protective, burnt patina over time.</p>
                 </div>
@@ -127,8 +126,7 @@
                     <div class="material-img-wrapper">
                         <img src="assets/images/material-stainless.png" alt="Stainless Steel Texture" class="material-img">
                     </div>
-                    <h3 style="font-family: var(--heading-font); font-size: 1.8rem; margin-bottom: 1rem;">STAINLESS
-                        STEEL</h3>
+                    <h3 style="font-family: var(--heading-font); font-size: 1.8rem; margin-bottom: 1rem;">STAINLESS STEEL</h3>
                     <p style="color: var(--text-secondary); font-size: 0.95rem; margin-inline: auto; max-width: 300px;">Polished to a mirror finish or
                         directionally brushed, designed to reflect the architectural spaces.</p>
                 </div>
@@ -136,8 +134,7 @@
                     <div class="material-img-wrapper">
                         <img src="assets/images/material-iron.png" alt="Forged Iron Texture" class="material-img">
                     </div>
-                    <h3 style="font-family: var(--heading-font); font-size: 1.8rem; margin-bottom: 1rem;">FORGED IRON
-                    </h3>
+                    <h3 style="font-family: var(--heading-font); font-size: 1.8rem; margin-bottom: 1rem;">FORGED IRON</h3>
                     <p style="color: var(--text-secondary); font-size: 0.95rem; margin-inline: auto; max-width: 300px;">The brutalist foundation. Raw, heavy,
                         and visceral—shaped by immense heat and sheer physical force.</p>
                 </div>
@@ -172,14 +169,11 @@
         </div>
     </section>
 
-    <section class="latest-news" class="standard-section" background-color: var(--background-color);">
+    <section class="latest-news standard-section" style="background-color: var(--background-color);">
         <div class="container">
-            <div class="row align-items-end mb-5 reveal-up">
-                <div class="col-12 col-md-8">
-                    <h2 class="section-title" style="text-align: left; margin-bottom: 0;">FROM THE FORGE</h2>
-                </div>
-                <div class="col-12 col-md-4 mt-3 mt-md-0 forge-logs-link" style="text-align: right;">
-                    <a href="blog.html" style="text-decoration: underline; letter-spacing: 1px;">READ ALL LOGS</a>
+            <div class="row mb-5 reveal-up text-center">
+                <div class="col-12">
+                    <h2 class="section-title" style="margin-bottom: 0;">FROM THE FORGE</h2>
                 </div>
             </div>
             <div class="row g-4">
@@ -403,6 +397,11 @@
 
         .material-img-wrapper:hover {
             box-shadow: 0 0 30px var(--accent-color);
+        }
+
+        .material-philosophy h3, 
+        .material-philosophy p {
+            text-align: center !important;
         }
     </style>
 
