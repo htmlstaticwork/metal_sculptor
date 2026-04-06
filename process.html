@@ -47,8 +47,19 @@
 
         .step-img {
             width: 100%;
-            height: auto;
+            height: 500px;
             object-fit: cover;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .img-reveal:hover .step-img {
+            transform: scale(1.05);
+        }
+
+        .img-reveal {
+            overflow: hidden;
+            border-radius: 4px;
         }
     </style>
     <link rel="stylesheet" href="assets/css/mobile-fix.css"></head>
@@ -108,8 +119,7 @@
         </div>
 
         <!-- Step 2 -->
-        <div class="row align-items-center process-step flex-row-reverse"
-            style="margin-left: 0; margin-right: 0;">
+        <div class="row align-items-center process-step flex-row-reverse">
             <div class="col-12 col-md-6 reveal-right">
                 <div class="step-number">02</div>
                 <div class="step-content">
@@ -142,7 +152,7 @@
 
         <!-- Step 4 -->
         <div class="row align-items-center process-step flex-row-reverse"
-            style="margin-left: 0; margin-right: 0; margin-bottom: 0;">
+            style="margin-bottom: 0;">
             <div class="col-12 col-md-6 reveal-right">
                 <div class="step-number">04</div>
                 <div class="step-content">
