@@ -355,9 +355,13 @@ img {
   margin-right: 5px;
 }
 
-[dir="rtl"] .nav-logo i, [dir="rtl"] .footer-logo i, [dir="rtl"] .auth-logo i {
+[dir="rtl"] .nav-logo i, [dir="rtl"] .footer-logo i {
   margin-right: 0 !important;
   margin-left: 15px !important;
+}
+
+[dir="rtl"] .auth-logo i {
+  margin: 0 !important;
 }
 
 .btn-login {
